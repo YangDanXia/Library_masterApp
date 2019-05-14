@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android" 
+    
+    android:src="@drawable/icon_left_click"
+    android:gravity="top"
+    android:alpha="0.7"
+    >
+<!--android:src="@drawable/btn_radio_to_off_mtrl_006"  -->
+</bitmap>

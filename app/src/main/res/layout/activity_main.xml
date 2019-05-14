@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.library_master.MainActivity" >
+    
+    <TextView 
+        android:id="@+id/main_txv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:background="#ffffffff"
+        android:gravity="center"
+        />
+    
+    
+    <Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/toolbar_search" >
+       
+    </Toolbar>
+    
+    <!--  
+    <TextView
+        android:id="@+id/txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="50dp"
+        android:paddingTop="100dp"
+        android:text="@string/main_tip"
+        android:textSize="18sp" />
+    -->
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/main_toolbar"
+        android:background="#aadddddd"
+        >
+        
+        <LinearLayout 
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/main_liner"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+            <ImageView 
+	            android:id="@+id/main_img"
+	            android:layout_width="70dp"
+	            android:layout_height="70dp"
+	            android:layout_margin="8dp"
+	            android:layout_gravity="center"
+	            android:src="@drawable/administrator_blue"
+            	/>
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+	        <Button 
+	            android:id="@+id/btn_logout"
+	            android:layout_width="95dp"
+	            android:layout_height="40dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/button"
+	            android:text="退出登录"
+	            />
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/main_liner"
+            android:background="#aad0d0d0"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:id="@+id/main_list_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                />
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                >
+                <TextView 
+	                android:id="@+id/main_list_2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:text="@string/main_timer"
+                	/>
+                <Chronometer 
+                    android:id="@+id/main_chronometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/main_list_2"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    />
+            </RelativeLayout>
+            <TextView 
+                android:paddingTop="10dp"
+                android:id="@+id/main_list_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                /> 
+            <TextView 
+                android:id="@+id/main_list_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                /> 
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/btn_lend"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/lend_book" />
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_lend"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/return_book" />
+    
+    <Button
+        android:id="@+id/btn_registration"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_return"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/damage_registration" />
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="25dp"
+        android:background="@drawable/toolbar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="1dp"
+            >
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_bac"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/toolbar_left_text" 
+                android:textSize="11sp"
+                />
+
+            <Button
+                android:id="@+id/btn_certer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/certer_click_bac"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/toolbar_certer_text"
+                android:textColor="@color/main_font_color" 
+                android:textSize="11sp"
+                />
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_bac"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/toolbar_right_text"
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+
+    </Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="35dp"
+        android:text="@string/toolbar_certer_text"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+</RelativeLayout>

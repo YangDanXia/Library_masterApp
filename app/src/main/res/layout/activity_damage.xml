@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.library_master.Damage" >
+
+    <Toolbar
+        android:id="@+id/damage_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/toolbar_search" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/damage_btn_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_find_next_holo_light" />
+        </RelativeLayout>
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/damage_bookid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/damge_view"
+        android:padding="10dp"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/damage_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/damage_bookid" 
+        android:background="@drawable/damge_view"
+        >
+	     <RadioButton
+	        android:id="@+id/radio0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:text="重度程度损坏" 
+	        />
+	
+	    <RadioButton
+	        android:id="@+id/radio1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:layout_marginTop="10dp"
+	        android:text="中等程度损坏" 
+	        />
+	
+	    <RadioButton
+	        android:id="@+id/radio2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:layout_marginTop="10dp"
+	        android:text="轻微程度损坏" 
+	        />
+    </RadioGroup>
+    
+    <Button 
+        android:id="@+id/damage_btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/ensure"
+        android:textSize="18sp"
+        android:background="@drawable/button"
+        />
+
+    
+
+</RelativeLayout>

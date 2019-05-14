@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baclogin"
+    tools:context="com.example.library_master.LoginActivity" >
+
+    <Toolbar
+        android:id="@+id/a_toolbar1"
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/toolbar_only_stroke" 
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <Button
+            android:id="@+id/a_btn_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_find_next_holo_light" />
+            
+        </RelativeLayout>
+        
+    </Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/btn_alter_password"
+        android:textSize="20sp" />
+
+
+    <TableRow
+        android:id="@+id/a_pass_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="110dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/new_pass"
+            android:textSize="20dp" 
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/a_new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword" 
+            android:hint="@string/tip_new_pass"
+            android:background="@null"/>
+    </TableRow>
+
+    <Button
+        android:id="@+id/a_btn_OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a_pass_table"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="@string/OK" 
+        android:textSize="19dp"/>
+
+</RelativeLayout>
